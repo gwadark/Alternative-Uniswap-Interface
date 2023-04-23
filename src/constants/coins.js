@@ -241,6 +241,24 @@ const GÖRLICoins = [
   },
 ]
 
+const ARBMAINNETCoins = [
+  {
+    name: "Ether",
+    abbr: "ETH",
+    address: "", // Weth address is fetched from the router
+  },
+  {
+    name: "Dai",
+    abbr: "DAI",
+    address: "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+  },
+  {
+    name: "Tether USD",
+    abbr: "USDT",
+    address: "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+  },
+]
+
 const COINS = new Map();
 COINS.set(chains.ChainId.MAINNET, MAINNETCoins);
 COINS.set(chains.ChainId.ROPSTEN, ROPSTENCoins);
@@ -250,5 +268,6 @@ COINS.set(chains.ChainId.KOVAN, KOVANCoins);
 COINS.set(chains.ChainId.AUTONITY, AUTONITYCoins);
 COINS.set(chains.ChainId.DEVNET, DEVNETCoins);
 COINS.set(chains.ChainId.PARASTATE, PARASTATECoins);
-COINS.set(chains.ChainId.GANCHE, GANACHECoins)
+COINS.set(chains.ChainId.GANCHE, GANACHECoins);
+COINS.set(chains.ChainId.ARBMAINNET, ARBMAINNETCoins)
 export default COINS
