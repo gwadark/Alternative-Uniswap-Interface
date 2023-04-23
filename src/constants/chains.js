@@ -1,4 +1,4 @@
-export const networks = [1, 3,4,5,42,123, 1337, 65110000, 65010000]
+export const networks = [1, 3, 4, 5, 42, 123, 1337, 42161, 65110000, 65010000]
 
 export const ChainId = {
   MAINNET: 1,
@@ -9,7 +9,8 @@ export const ChainId = {
   DEVNET: 65110000,
   AUTONITY: 65010000,
   PARASTATE: 123,
-  GANCHE: 1337
+  GANCHE: 1337,
+  ARBMAINNET: 42161
 };
 
 export const routerAddress = new Map();
@@ -22,4 +23,4 @@ routerAddress.set(ChainId.DEVNET, "0x04e555283D37aE85F6eB311fe2578F3B3f3dFc52");
 routerAddress.set(ChainId.AUTONITY, "0x04e555283D37aE85F6eB311fe2578F3B3f3dFc52");
 routerAddress.set(ChainId.PARASTATE, "0x07a1905D44feeA439ceFAabd11a63bEf684abE11");
 routerAddress.set(ChainId.GANCHE, "0x0F44AC51198D8F99847db6C431448dBC673428f1");
-
+routerAddress.set(ChainId.ARBMAINNET, "0xc640fd6f9baa1fce48ed1abe823355e0356e60a9");
